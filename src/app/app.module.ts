@@ -7,6 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { BemvindoComponent } from './bemvindo/bemvindo.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { InicioComponent } from './inicio/inicio.component';
     MenuComponent,
     RodapeComponent,
     BemvindoComponent,
-    InicioComponent
+    InicioComponent,
+    CadastrarComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,
