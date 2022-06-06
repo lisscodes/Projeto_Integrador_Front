@@ -1,7 +1,3 @@
-/* .bg-roxo{
-    background-color: rgb(255, 255, 255);
-} */
-
 .m-b{
     margin-top: 1.65rem;
 }
@@ -14,13 +10,6 @@
     background-color: rgb(247, 73, 203);
     color: rgb(150, 0, 150)
 } 
-
-.lnr-eye {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-}
 .text-pink{
     color: purple;
 }
@@ -29,4 +18,10 @@
 .centro{
 width: 100vw;
 height: 100vh;
+}
+
+@media(max-width: 290px) {
+    p {
+    font-size: 12px;
+    }
 }
