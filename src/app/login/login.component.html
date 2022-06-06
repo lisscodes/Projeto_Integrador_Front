@@ -1,34 +1,37 @@
-<div class="col-md-4 container align-items-center justify-content-center column card card-body">
-<div class="col-md-10">
-    <h2 class="text-center mb-3">Entrar</h2>
-    <form class="">
-      <div class="form-group">
-        <label for="usuario">Usuário</label>
-        <input
-          class="form-control"
-          type="email"
-          placeholder="Seu e-mail"
-        />
+    <div class="d-flex justify-content-center align-items-center flex-row centro">
+      <div class="container col-md-5">
+        <div class="align-items-center justify-content-center card card-body shadow p-3 mb-5">
+          <div class="col-md-9 justify-content-center m-b">
+            <h1 class="text-center">RedeTec</h1>
+            <h6 class="text-center">Faça parte da comunidade que te ajuda a crescer!</h6>
+            <div class="form-group">
+              <label for="usuario">E-mail</label>
+              <input
+                class="form-control bg-roxo text-pink"
+                type="email"
+                placeholder="Seu e-mail"
+              />
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input
+                class="form-control bg-roxo text-pink"
+                type="password"
+                placeholder="Sua senha"
+              />
+            </div>
+            <div class="d-flex justify-content-center mb-4 m-b">
+              <button type="submit" class="btn btn-pink col-10 rounded">
+                Entrar
+              </button>
+            </div>
+            <div class="d-flex justify-content-center h6">
+              <p>
+                Novo no RedeTec?<a routerLink="/cadastrar" class="ml-1 "
+                  >Cadastre-se</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="senha">Senha</label>
-        <input
-          class="form-control"
-          type="senha"
-          placeholder="Sua senha"
-        />
-      </div>
-    </form>
-    <div class="d-flex justify-content-center">
-      <button type="submit" class="btn btn-primary col-12 rounded-pill">Entrar</button>
     </div>
-    <div class="row d-flex align-items-center p-0 my-6">
-      <hr class="col-4">
-      <span class="">OU</span>
-    <hr class="col-4"> 
-  </div>
-    <div class="d-flex justify-content-center h6">
-      <p>Não tem uma conta?<a routerLink="/cadastrar" class="ml-1">Cadastre-se</a></p>
-    </div>
-  </div>
-</div>
