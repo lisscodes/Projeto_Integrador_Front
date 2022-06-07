@@ -4,7 +4,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'',redirectTo:'login',pathMatch:'full'}, //caminho para os componentes
   {path:'login',component:LoginComponent},
   {path:'cadastrar',component:CadastrarComponent}
 ];
