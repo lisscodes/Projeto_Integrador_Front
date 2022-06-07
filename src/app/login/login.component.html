@@ -7,7 +7,7 @@
             <h6 class="text-center">Faça parte da comunidade que te ajuda a crescer!</h6>
             <div class="form-group">
               <label for="usuario">E-mail</label>
-              <input [(ngModel)]='usuarioLogin.usuario'
+              <input [(ngModel)]='usuarioLogin.usuario' name="usuario"
                 class="form-control bg-roxo text-pink"
                 type="email"
                 placeholder="Seu e-mail"
@@ -15,7 +15,7 @@
             </div>
             <div class="form-group">
               <label for="senha">Senha</label>
-              <input [(ngModel)]='usuarioLogin.senha'
+              <input [(ngModel)]='usuarioLogin.senha' name="senha"
                 class="form-control bg-roxo text-pink"
                 type="password"
                 placeholder="Sua senha"
@@ -36,3 +36,4 @@
         </div>
       </div>
     </div>
+  
