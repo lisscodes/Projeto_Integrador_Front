@@ -1,13 +1,20 @@
+.img-bg{
+    background-image: url('https://i.imgur.com/OG75puf.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
 .m-b{
     margin-top: 1.65rem;
 }
 
 .btn-pink{
-    background-color: rgb(250, 91, 210);
+    background-color: rgba(231, 87, 195, 0.8);
     color: white;
 }
 .btn-pink:hover{
-    background-color: rgb(247, 73, 203);
+    background-color: rgb(241, 79, 200);
     color: rgb(150, 0, 150)
 } 
 .text-pink{
