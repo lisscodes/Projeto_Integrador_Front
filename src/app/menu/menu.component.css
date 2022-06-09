@@ -1,0 +1,14 @@
+.fs-16
+{
+  font-size: 16pt;
+}
+
+a {
+  cursor: pointer;
+}
+
+#navbar {
+  background-color: #d0acd0;
+  overflow-x: hidden;
+  width: 100vw;
+}
