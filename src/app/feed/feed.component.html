@@ -16,7 +16,7 @@
           </div>
 
           <div class="form-group">
-            <label for="texto">Escolha seu tema ou <a data-dismiss="modal" routerLink="/tema">cadastre um novo</a>:
+            <label for="texto">Escolha seu tema ou <a data-dismiss="modal" routerLink="/categoria">cadastre um novo</a>:
             </label>
             <select name="tema" id="tema" class="form-control" [(ngModel)]="idTema" (change)="findByIdTema()">
               <option *ngFor="let i of listaTemas" value="{{i.id}}">{{i.tema}}</option>
