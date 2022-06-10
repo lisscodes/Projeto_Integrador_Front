@@ -29,7 +29,7 @@ export class CategoriaDeleteComponent implements OnInit {
     }
 
     this.idCategoria = this.route.snapshot.params['id']
-    
+    this.findByCategoria(this.idCategoria)
   }
 
   findByCategoria(id: number){

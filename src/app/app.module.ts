@@ -12,8 +12,6 @@ import { BemvindoComponent } from './bemvindo/bemvindo.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FeedComponent } from './feed/feed.component';
-import { TemaComponent } from './tema/tema.component';
-import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
@@ -31,8 +29,6 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
     InicioComponent,
     CadastrarComponent,
     FeedComponent,
-    TemaComponent,
-    TemaEditComponent,
     CategoriaComponent,
     CategoriaEditComponent,
     CategoriaDeleteComponent,
