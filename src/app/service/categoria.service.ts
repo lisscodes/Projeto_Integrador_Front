@@ -29,6 +29,9 @@ export class CategoriaService {
 
   putTema(categoria: Categoria): Observable<Categoria>{
     return this.http.put<Categoria>('https://redetec.herokuapp.com/categorias', categoria, this.token)
+  }
 
+  deleteTema(id: number){
+    return this.http.delete(`https://redetec.herokuapp.com/categorias/${id}`, this.token)
   }
 }
