@@ -25,7 +25,7 @@ cadastrar(user: Usuario): Observable<Usuario>{
 }
 
 getByIdUsuario(id: number): Observable<Usuario>{
-  return this.http.get<Usuario>(`https://redetec.herokuapp.com/usuarios/${id}`)
+  return this.http.get<Usuario>(`https://redetec.herokuapp.com/usuarios/${id}`, this.token)
 }
 
 token = {

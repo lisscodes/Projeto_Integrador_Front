@@ -16,9 +16,11 @@ import { PostagemService } from '../service/postagem.service';
 export class FeedComponent implements OnInit {
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
+
   tema: Categoria = new Categoria()
   listaTemas: Categoria[]
   idTema: number
+
   usuario: Usuario = new Usuario()
   idusuario = environment.id
 
@@ -33,6 +35,7 @@ export class FeedComponent implements OnInit {
     if(environment.token == ''){
       this.router.navigate(['/login'])
     }
+    this.authService.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
   }
