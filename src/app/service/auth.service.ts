@@ -24,6 +24,10 @@ cadastrar(user: Usuario): Observable<Usuario>{
   return this.http.post<Usuario>('https://redetec.herokuapp.com/usuarios/cadastrar', user)
 }
 
+getByIdUsuario(id: number): Observable<Usuario>{
+  return this.http.get<Usuario>(`https://redetec.herokuapp.com/usuarios/${id}`)
+}
+
 logado(){
   let ok = false
 
