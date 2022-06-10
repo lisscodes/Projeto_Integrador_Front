@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { UsuarioLogin } from '../model/UsuarioLogin';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Usuario } from '../model/Usuario';
 import { Observable } from 'rxjs';
 import { environment } from './../../environments/environment.prod';
@@ -26,6 +26,16 @@ cadastrar(user: Usuario): Observable<Usuario>{
 
 getByIdUsuario(id: number): Observable<Usuario>{
   return this.http.get<Usuario>(`https://redetec.herokuapp.com/usuarios/${id}`)
+}
+
+token = {
+  headers: new HttpHeaders().set('Authorization', environment.token)
+}
+
+refreshToken() {
+  this.token = {
+    headers: new HttpHeaders().set('Authorization', environment.token)
+  }
 }
 
 logado(){
