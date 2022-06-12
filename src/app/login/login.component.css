@@ -9,17 +9,12 @@
     margin-top: 1.65rem;
 }
 
-.btn-pink{
-    background-color: rgba(231, 87, 195, 0.8);
-    color: white;
+#bt-entrar {
+  background-color: #018790;
+  color:azure;
+  border: none;
 }
-.btn-pink:hover{
-    background-color: rgb(241, 79, 200);
-    color: rgb(150, 0, 150)
-} 
-.text-pink{
-    color: purple;
-}
+
 /* Centralização*/
 
 .centro{

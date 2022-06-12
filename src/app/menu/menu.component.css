@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
 .fs-16
 {
   font-size: 16pt;
@@ -8,7 +10,26 @@ a {
 }
 
 #navbar {
-  background-color: #d0acd0;
+  background-color: #a8bdbe;
   overflow-x: hidden;
   width: 100vw;
 }
+
+#navbar {
+    display: flex;
+    gap: 32px;
+}
+
+#cabecalho-img {
+  height: 72px;
+  width: 72px;
+}
+
+#cabecalho-item {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+

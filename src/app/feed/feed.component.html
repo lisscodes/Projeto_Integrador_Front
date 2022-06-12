@@ -1,13 +1,19 @@
 <div class="container-fluid d-flex flex-column">
-  <div class="row justify-content-between mt-3 mb-5">
-    <div class="col-md-4 d-flex flex-column">
-      <h5 class="text-secondary">Seja bem vindo(a)!</h5>
+  <div class="row justify-content-between">
+
+    <!-------------------------------primeira col------------------------------------>
+    <div class="col-md-2 d-flex flex-column bg-light">
       <div class="row d-flex">
         <div class="col-md-12">
 
-          <div class="form-group">
+          <div class="form-group mt-3">
             <label for="titulo">Título</label>
             <input [(ngModel)]="postagem.titulo" type="text" class="form-control" id="titulo" placeholder="Digite o título">
+          </div>
+
+          <div class="form-group">
+            <label for="foto">Foto</label>
+            <input [(ngModel)]="postagem.foto" type="text" class="form-control" id="foto" placeholder="Insira uma foto">
           </div>
 
           <div class="form-group">
@@ -22,12 +28,16 @@
               <option *ngFor="let i of listaTemas" value="{{i.id}}">{{i.tema}}</option>
             </select>
           </div>
-          <button class="btn btn-secondary mr-2" (click)="publicar()">Nova Postagem</button>
+          <div class="align-items-center justify-content-center">
+            <button class="btn btn-secondary mr-2 mb-3 pl-5 pr-5" (click)="publicar()">Postar</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-md-">
+    <!-------------------------------segunda col------------------------------------>
+
+    <div class="col-md-6">
 
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -81,12 +91,14 @@
       </div>
 
     </div>
-  </div>
 
-      <div class="container d-flex justify-content-end mb-5 mt-3">
-        <div class="row d-flex align-items-center mb-5">
-
-        </div>
+    <!-------------------------------terceira col------------------------------------>
+    <div class="col-md-3 bg-light">
+      <div class="row">
+        <img class="img-fluid" src="/assets/menino_programador_1-removebg-preview.png">
       </div>
+    </div>
 
+
+  </div>
 </div>
