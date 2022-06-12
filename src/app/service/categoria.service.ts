@@ -7,7 +7,7 @@ import { Categoria } from '../model/Categoria';
 @Injectable({
   providedIn: 'root'
 })
-export class TemaService {
+export class CategoriaService {
 
   constructor(private http: HttpClient) { }
 
@@ -29,6 +29,9 @@ export class TemaService {
 
   putTema(categoria: Categoria): Observable<Categoria>{
     return this.http.put<Categoria>('https://redetec.herokuapp.com/categorias', categoria, this.token)
+  }
 
+  deleteTema(id: number){
+    return this.http.delete(`https://redetec.herokuapp.com/categorias/${id}`, this.token)
   }
 }

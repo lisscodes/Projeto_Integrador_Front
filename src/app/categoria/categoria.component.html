@@ -34,25 +34,25 @@
         <div class="col-md-6">
             <table class="table table-hover">
                 <thead>
-                  <tr>
+                    <tr>
                     <th scope="col">#</th>
                     <th scope="col">Tema</th>
                     <th scope="col" class="text-right">Modificações</th>
-                   
-                  </tr>
+                
+                </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor="let tema of listaTemas">
                     <th>{{tema.id}}</th>
                     <td>{{tema.tema}}</td>
                     <td class="d-flex justify-content-end">
-                      <button class="btn btn-info mr-3" [routerLink]="['/tema-edit', tema.id]">Editar</button>
-                      <button class="btn btn-danger">Apagar</button>
+                        <button class="btn btn-info mr-3" [routerLink]="['/categoria-edit', tema.id]">Editar</button>
+                        <button class="btn btn-danger" [routerLink]="['/categoria-delete', tema.id]">Apagar</button>
                     </td>
-                   
-                  </tr>
+                
+                </tr>
                 </tbody>
-              </table>
+            </table>
         </div>
     </div>
 </div>
