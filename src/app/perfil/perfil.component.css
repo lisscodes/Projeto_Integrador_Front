@@ -1,0 +1,109 @@
+.tcinza{
+    color:rgb(175, 175, 175);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.f-size{
+    font-size: 1rem;
+}
+
+.f-size-12{
+    font-size: 12px;
+}
+
+/* .menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+    }
+
+.menu{
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+    position:absolute;
+    }
+
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+background:rgb(226, 226, 226);
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+    }
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+    }
+
+    .menu li{
+        position:relative;
+        float:left;
+        border-right:1px solid #c0c0c0;
+        } */
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.menu menu-menu li{
+    list-style: none;
+}
+
+.menu{
+    position: relative;
+
+}
+
+.menu-trigger {
+    display: inline-grid;
+    place-items: center;
+    padding: 0.5em;
+    border: 1px solid #CCC;
+    border-radius: 0.3em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.menu-menu{
+    background: white;
+    border: 1px solid #CCC;
+    border-radius: 0.3em;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    position: absolute;
+    margin-top: 0.5em;
+}
+
+.menu-menu li:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.menu-menu li{
+    padding: 0.2em 0.4em;
+}
+
+
+
+
+
+
