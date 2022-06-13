@@ -2,9 +2,9 @@
   <div class="row justify-content-between">
 
     <!-------------------------------primeira col------------------------------------>
-    <div class="col-md-2 d-flex flex-column bg-light">
-      <div class="row d-flex">
-        <div class="col-md-12">
+    <div class="col-md-2 d-flex flex-column bg-light sticky-top">
+      <div class="row d-flex ">
+        <div class="col-md-12 ">
 
           <div class="form-group mt-3">
             <label for="titulo">Título</label>
@@ -62,6 +62,7 @@
             <h5 class="card-title m-0">{{item.titulo}}</h5>
             <small class="text-muted">Tema: {{item.categoria.tema}}</small>
             <p class="card-text mt-3">{{item.texto}}</p>
+            <img src="{{item.foto}}" alt="" class="img-fluid">
             <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
             <p class="card-text"><small class="text-muted"> by: {{item.usuario.nome}}</small></p>
           </div>

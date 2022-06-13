@@ -9,3 +9,8 @@
   width: 400px;
   height: 400px;
 }
+
+.topo {
+  position: sticky;
+  top: 10px;
+}

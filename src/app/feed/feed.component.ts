@@ -31,7 +31,7 @@ export class FeedComponent implements OnInit {
     private authService: AuthService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     if(environment.token == ''){
       this.router.navigate(['/login'])
     }
@@ -61,6 +61,7 @@ export class FeedComponent implements OnInit {
   findByIdUsuario(){
     this.authService.getByIdUsuario(this.idusuario).subscribe((resp: Usuario) => {
       this.usuario = resp
+      console.log(this.usuario)
     })
   }
 
@@ -78,6 +79,6 @@ export class FeedComponent implements OnInit {
       this.getAllPostagens()
     })
   }
-  
+
 
 }

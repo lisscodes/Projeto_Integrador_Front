@@ -5,3 +5,7 @@
 .fs-50{
     font-size: 50pt;
 }
+
+body {
+  overflow-x: hidden;
+}
