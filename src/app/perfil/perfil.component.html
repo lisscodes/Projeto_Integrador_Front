@@ -13,9 +13,10 @@
 </div>
 </div>
 
-<div class="container mt-5">
+<div class="container-fluid d-flex flex-column mt-5">
+    <div class="row justify-content-between">
     <div class="tab-content mt-5">
-        <div class="card text-center col-6 my-4" *ngFor="let item of usuario.postagem">
+        <div class="card text-center col-6 my-4 d-flex flex-column" *ngFor="let item of usuario.postagem">
             <div class="card-body"> 
                 <div class="row align-items-center mb-3">
                     <div class="col-md-2 d-flex align-items-start justify-content-start">
@@ -85,6 +86,7 @@
         </div>
     </div>
     <hr class="col-md-12">
+</div>
 </div>
 
 

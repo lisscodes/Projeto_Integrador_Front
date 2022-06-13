@@ -23,6 +23,9 @@ export class FeedComponent implements OnInit {
 
   usuario: Usuario = new Usuario()
   idusuario = environment.id
+  foto = environment.foto
+  nome = environment.nome
+  tipo = environment.tipo
 
   constructor(
     private router: Router,
