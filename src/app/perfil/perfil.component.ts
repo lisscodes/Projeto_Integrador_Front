@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
-import { FeedComponent } from '../feed/feed.component';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 
@@ -41,5 +40,4 @@ export class PerfilComponent implements OnInit {
     })
   }
 
-
-}
+  }

@@ -79,9 +79,9 @@ ul{
     display: inline-grid;
     place-items: center;
     padding: 0.5em;
-    border: 1px solid #CCC;
-    border-radius: 0.3em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    /* border: 1px solid #CCC;
+    border-radius: 0.3em; */
+    /* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); */
     cursor: pointer;
 }
 
@@ -100,6 +100,32 @@ ul{
 
 .menu-menu li{
     padding: 0.2em 0.4em;
+}
+
+
+/*Não funciona list style*/
+.menu-menu li a{
+    list-style:none;
+}
+
+.foto-size{
+    width: 75vw;
+    height: 75vh;
+
+}
+
+.pencil-color{
+    color: rgba(0,0,0,0.5);
+}
+
+.btn-config{
+    border:none;
+    background-color: white;
+}
+
+.btn-config:hover{
+    background-color: rgb(238, 238, 238);
+    border-radius: 70vw;
 }
 
 
