@@ -80,5 +80,9 @@ export class FeedComponent implements OnInit {
     })
   }
 
+  curtir(){
+   
+  }
+
 
 }
