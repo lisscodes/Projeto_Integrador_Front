@@ -1,1 +1,49 @@
-<p>user-edit works!</p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-secondary">Atualizar meu usuário</h1>
+
+            <form >
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input [(ngModel)]='usuario.nome' name="nome" class="form-control" type="text" placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input [(ngModel)]='usuario.usuario' name="email" class="form-control" type="email" placeholder="Seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="imagem">Foto</label>
+                    <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="foto" placeholder="Insira o link da foto">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input (input)="confirmSenha($event)" name="senha" class="form-control" type="password" placeholder="Insira uma senha de no mínimo 8 caracteres">
+                </div>
+                <div class="form-group">
+                    <label for="ConfirmSenha">Confirme sua senha</label>
+                    <input [(ngModel)]='usuario.senha' name="confirmSenha" class="form-control" type="password" placeholder="Confirme a senha">
+                </div>
+                <div class="form-group">
+                    <label for="">Tipo de Usuário</label>
+                    <select name="tipo" id="" (change)="tipoUser($event)" class="form-control">
+                        <option selected disable>Selecione sua opção</option>
+                        <option value="Padrão">Padrão</option>
+                        <option value="Empresa">Empresa</option>
+                        <option value="Mentor">Mentor</option>
+                        <option value="Administrador">Administrador</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <button routerLink="/login" class="btn btn-outline-danger w-25" routerLink="/perfil">Cancelar</button>
+                    <button class="btn btn-success w-25" (click)="atualizar()">Atualizar</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+</div>

@@ -6,11 +6,15 @@
         <img src="/assets/rede_tec-logo-removebg.png" alt="logo redetec" class="img-fluid rounded-circle" id="cabecalho-img">
       </li>
       <li class="nav-item pl-3" id="cabecalho-item">
-        <p class="m-0 font-weight-bold text-white fs-16 mr-4">RedeTec</p>
+
+        <a routerLink="/feed">
+          <p class="m-0 font-weight-bold text-white fs-16 mr-4">RedeTec</p>
+        </a>
+
       </li>
 
       <li class="nav-item pl-3" id="cabecalho-item">
-        <a [routerLink]="['/usuario-edit', id]">
+        <a routerLink="/perfil">
           <p class="text-white fs-16 m-0 font-weight-bold mr-4">Perfil</p>
         </a>
       </li>

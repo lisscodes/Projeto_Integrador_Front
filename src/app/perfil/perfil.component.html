@@ -1,0 +1,93 @@
+<div class="container mt-4">
+    <div class="row align-items-center">
+        <div class="col-md-2 d-flex align-items-start justify-content-start">
+            <img src="{{foto}}" alt="Foto de usuario" width="130px" height="130px" class="img-fluid rounded-circle">
+        </div>
+        <div class="mr-auto">
+                <p class="h1 d-flex justify-content-start">{{nome}} <a [routerLink]="['/user-edit', id]"><i class="fa fa-pencil h4 pencil-color ml-2" aria-hidden="true"></i>
+                </a></p>
+            
+                <p class="h5 tcinza d-flex justify-content-start">{{usuario.tipo}}</p>
+
+    </div>
+</div>
+</div>
+
+<div class="container-fluid d-flex flex-column mt-5">
+    <div class="row justify-content-between">
+    <div class="tab-content mt-5">
+        <div class="card text-center col-6 my-4 d-flex flex-column" *ngFor="let item of usuario.postagem">
+            <div class="card-body"> 
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-2 d-flex align-items-start justify-content-start">
+                        <img src="{{foto}}" alt="Foto de usuario" width="50px" height="50px" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="row mr-auto d-flex align-items-start justify-content-start">
+                        <div class="col-md-12">
+                            
+                                <span class="f-size d-flex justify-content-start">{{nome}}</span>
+                            
+                        </div>
+                            
+                                <span class="tcinza f-size-12 d-flex justify-content-start col-md-12">{{usuario.tipo}}</span>
+                        
+                    </div>
+
+                    <!-- <hr class="col-md-12"> -->
+
+                    <!--3 pontinhos-->
+
+                    <!-- <div class="menu">
+                        <span class="menu-trigger">
+                            <img src="https://i.imgur.com/rYVlhwK.png" alt="Três pontinhos" width="20px" height="20px">
+                        </span>
+                        <ul class="menu-menu">
+                            <li><a [routerLink]="['/postagem-edit', item.id]">Editar</a></li>
+                            <li><a [routerLink]="['/postagem-delete', item.id]">Apagar</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="" role="group">
+                        <button type="" id="btnGroupDrop1" class="btn-config p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://i.imgur.com/rYVlhwK.png" alt="Três pontinhos" width="20px" height="20px">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item d-flex justify-content-center" [routerLink]="['/postagem-edit', item.id]">Editar</a>
+                        <a class="dropdown-item d-flex justify-content-center" [routerLink]="['/postagem-delete', item.id]">Apagar</a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div id="basicExampleNav">
+                    <ul class="menu">
+                        <li>
+                            <ul>
+                                <li><a [routerLink]="['/postagem-edit', item.id]">Editar</a></li>
+                                <li><a [routerLink]="['/postagem-delete', item.id]">Apagar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> -->
+
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="https://i.imgur.com/rYVlhwK.png" width="15px" height="15px" alt="Três pontinhos">
+                    </button> -->
+
+                </div>
+                <h5 class="card-title m-0">{{item.titulo}}</h5>
+                <small class="text-muted">Tema: {{item.categoria.tema}}</small>
+                <p class="card-text mt-3">{{item.texto}}</p>
+                <img src="{{item.foto}}" alt="" class="img-fluid foto-size">
+                <p class="card-text mt-3"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
+
+            </div>
+        </div>
+    </div>
+    <hr class="col-md-12">
+</div>
+</div>
+
+
+<!-- <img src="{{foto}}" alt="User profile" width="50px" height="50px" class="img-fluid rounded-circle"> -->

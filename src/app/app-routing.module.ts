@@ -10,6 +10,7 @@ import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { FeedComponent } from './feed/feed.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:'categoria-delete/:id',component:CategoriaDeleteComponent},
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
-  {path: 'user-edit/:id', component: UserEditComponent}
+  {path: 'user-edit/:id', component: UserEditComponent},
+  {path: 'perfil', component: PerfilComponent}
 
 ];
 

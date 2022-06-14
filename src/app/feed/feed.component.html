@@ -2,7 +2,11 @@
   <div class="row justify-content-between">
 
     <!-------------------------------primeira col------------------------------------>
+<<<<<<< HEAD
     <div class="col-md-2 d-flex flex-column bg-light sticky-top" id="firstcol">
+=======
+    <div class="col-md-2 d-flex flex-column bg-light">
+>>>>>>> 4cd33534fa5d7c56884517414dcef0480ffa580b
       <div class="row d-flex ">
         <div class="col-md-12 ">
 
@@ -44,15 +48,16 @@
           <a class="nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens"
             aria-selected="true">Todas as Postagens</a>
         </li>
-        <li class="nav-item" role="presentation">
-          <a (click)="findByIdUsuario()" class="nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab"
-            aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
-        </li>
+        
         <li class="nav-item" role="presentation">
           <a class="nav-link text-secondary font-weight-bold" id="nav-postagensTema-tab" data-toggle="tab" href="#postagensTema" role="tab"
             aria-controls="nav-postagensTema" aria-selected="false">Postagens por Tema</a>
         </li>
       </ul>
+
+      <div class="row">
+        <img src="{{foto}}" alt="Foto de perfil do usuário" width="50px" height="50px" class="img-fluid rounded-circle">
+      </div>
 
       <!--Ng For - Cards da postagem-->
       <div class="tab-content mt-5" id="nav-tabContent">
@@ -78,21 +83,6 @@
         </div>
 
       </div>
-
-        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
-          <div class="card text-center">
-            <div class="card-body" *ngFor="let item of usuario.postagem">
-              <h5 class="card-title m-0">{{item.titulo}}</h5>
-              <small class="text-muted">Tema: {{item.categoria.tema}}</small>
-              <p class="card-text mt-3">{{item.texto}}</p>
-              <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
-
-              <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
-              <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
-
-            </div>
-          </div>
-        </div>
 
         <div class="tab-pane fade" id="postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema-tab" >
           <div class="card text-center" *ngFor="let tema of listaTemas">
