@@ -27,6 +27,7 @@ export class FeedComponent implements OnInit {
   nome = environment.nome
   tipo = environment.tipo
 
+
   constructor(
     private router: Router,
     private postagemService: PostagemService,
@@ -83,9 +84,7 @@ export class FeedComponent implements OnInit {
     })
   }
 
-  curtir(){
-   
-  }
+ 
 
 
 }
