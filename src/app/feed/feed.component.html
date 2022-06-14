@@ -52,21 +52,30 @@
       </ul>
 
       <!--Ng For - Cards da postagem-->
+      
+
       <div class="tab-content mt-5" id="nav-tabContent">
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
           <div class="card text-center my-3" *ngFor="let item of listaPostagens">
-          <div class="card-body ">
+            <div class="container mr-3">
+        <div class="d-flex justify-content-around mr-3">
+          <div class="card-body my-3">
             <div class="row align-items-center mb-3">
-              <div class="col-md-2 d-flex align-items-start justify-content-start">
+              <div class="col-md-2 d-flex align-items-start justify-content-start mb-3">
                   <img src="{{foto}}" alt="Foto de usuario" class="img-fluid rounded-circle">
               </div>
               <div class="row mr-auto d-flex align-items-start justify-content-start">
-                  <div class="col-md-12">
-                      
+                  
+                    <div class="d-flex justify-content-center mr-5">
                           <span class="f-size d-flex justify-content-start">{{nome}}</span> 
-                      
+                         <span class="tcinza f-size-12 d-flex justify-content-start col-md-12">{{usuario.tipo}}</span>
                   </div>
-                  <span class="tcinza f-size-12 d-flex justify-content-start col-md-12">{{usuario.tipo}}</span>
+              
+                  <div class="col-md-12">
+                    <span class="tcinza f-size-12 align-self-start col-md-12">Administrador</span>
+            </div>
+                  
+                
               </div>
 
           </div>
@@ -91,6 +100,9 @@
 
       </div>
       </div>
+    </div>
+
+  </div>
 
     </div>
 
