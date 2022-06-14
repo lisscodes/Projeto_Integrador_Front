@@ -16,16 +16,7 @@
 }
 
 
-body {
-  height: 50vh;
-  background-color: #111;
-  color: white;   
-  font-family: Arial, Helvetica, sans-serif;       
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-button {
+#like {
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -33,17 +24,17 @@ button {
   border-radius: 8px;
   padding: 8px;
   font-size: 1.1rem;
-  color: #000;
+  background-color: white;
   cursor: pointer;
   transition: all .25s ease-in-out;
 }
 .label {
   display: flex;
   align-items: center;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 .label svg {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 .label path {
   fill: #8a8d9b;   
@@ -55,13 +46,17 @@ button {
 button:hover path{
   fill: #FF0000;
 }
-button.like .number {
+/*button.like .number {
   color: #FF0000
-}
+}*/
 button.like svg {
   animation: transitionLike 1s ease-in;
 }
 button.like path {
+  fill: #FF0000;
+}
+
+button:focus path{
   fill: #FF0000;
 }
 
@@ -76,6 +71,14 @@ button.like path {
     transform: scale(1);
   }
 }
+
+.rounded-circle{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+
 
 
 
