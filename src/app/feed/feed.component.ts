@@ -55,12 +55,14 @@ export class FeedComponent implements OnInit {
   findByIdTema(){
     this.categoriaService.getAllTema().subscribe((resp: Categoria[]) => {
       this.listaTemas = resp
+      this.router.navigate(['/listaTemas'])
     })
   }
 
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
       this.listaPostagens = resp
+      this.router.navigate(['/listaPostagens'])
     })
   }
 
@@ -85,6 +87,7 @@ export class FeedComponent implements OnInit {
       this.getAllPostagens()
     })
   }
+ 
 
  
 
