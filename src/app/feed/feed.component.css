@@ -40,8 +40,8 @@
   margin-right: 2px;
 }
 .label path {
-  fill: #8a8d9b;   
-  transition: all .25s ease-in-out;       
+  fill: #8a8d9b;
+  transition: all .25s ease-in-out;
 }
 .number {
   color: #000000;

@@ -1,38 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-light p-4 " id="navbar">
+<nav class="navbar navbar-expand-lg navbar-light p-4 row border-bottom shadow-sm p-3 mb-5 bg-white rounded" id="navbar">
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav w-100 d-flex align-items-center justify-content-center">
-      <li class="nav-item active">
-        <img src="/assets/rede_tec-logo-removebg.png" alt="logo redetec" class="img-fluid rounded-circle" id="cabecalho-img">
-      </li>
-      <li class="nav-item pl-3" id="cabecalho-item">
-
-        <a routerLink="/feed">
-          <p class="m-0 font-weight-bold text-white fs-16 mr-4">RedeTec</p>
-        </a>
-
-      </li>
-
-      <li class="nav-item pl-3" id="cabecalho-item">
-        <a routerLink="/perfil">
-          <p class="text-white fs-16 m-0 font-weight-bold mr-4">Perfil</p>
+    <img src="/assets/rede_tec-logo-removebg.png" alt="logo redetec" class="img-fluid rounded-circle ml-5" id="cabecalho-img">
+    <ul class="navbar-nav w-100 d-flex align-items-center justify-content-left space-around pl-5">
+      <li class="nav-item pl-3">
+        <a routerLink="/feed" id="cabecalho-item">
+          <p class="m-0 font-weight-bold fs-16 mr-4">RedeTec</p>
         </a>
       </li>
 
-      <li class="nav-item pl-3" id="cabecalho-item">
-        <a [routerLink]="['/usuario-edit', id]">
-          <p class="text-white fs-16 m-0 font-weight-bold mr-4">Quem somos nós</p>
+      <li class="nav-item pl-3">
+        <a routerLink="/perfil" id="cabecalho-item">
+          <p class="fs-16 m-0 font-weight-bold mr-4">Perfil</p>
         </a>
       </li>
 
-      <li class="nav-item pl-3" id="cabecalho-item">
-        <a [routerLink]="['/usuario-edit', id]">
-          <p class="text-white fs-16 m-0 font-weight-bold mr-4">Apoie</p>
+      <li class="nav-item pl-3">
+        <a id="cabecalho-item">
+          <p class="fs-16 m-0 font-weight-bold mr-4">Trilhas</p>
         </a>
       </li>
 
-      <li class="nav-item pl-3" id="cabecalho-item">
-        <a (click)="sair()" class="m-0 font-weight-bold text-white fs-16">Sair<i class="fa fa-sign-out" aria-hidden="true"></i>
+      <li class="nav-item pl-3">
+        <a (click)="sair()" class="m-0 font-weight-bold fs-16 mr-4" id="cabecalho-item">Sair
         </a>
       </li>
     </ul>

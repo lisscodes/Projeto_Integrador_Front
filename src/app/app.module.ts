@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { BemvindoComponent } from './bemvindo/bemvindo.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FeedComponent } from './feed/feed.component';
@@ -26,7 +25,6 @@ import { PerfilComponent } from './perfil/perfil.component';
     LoginComponent,
     MenuComponent,
     RodapeComponent,
-    BemvindoComponent,
     InicioComponent,
     CadastrarComponent,
     FeedComponent,

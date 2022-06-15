@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Righteous&family=Sarala:wght@400;700&display=swap%27);;
+html{
+    scroll-behavior: smooth;
+}
+.fs-54{
+    font-size: 44pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
+
+.fonte{
+    font-family: 'Sarala', sans-serif;
+  color: #756E6E;
+  font-weight: 400;
+  font-size: 18px;
+}
