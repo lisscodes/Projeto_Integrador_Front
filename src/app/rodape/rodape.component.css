@@ -9,11 +9,6 @@ ul.social-network li {
   padding: 5px;
 }
 
-#footer {
-  background-color:#a8bdbe;
-  overflow-x: hidden;
-  width: 100vw;
-}
 
 .fa {
   font-size: 15pt;
@@ -33,4 +28,12 @@ ul.social-network li {
 .fa-copyright {
   font-size: 10pt;
 }
+
+.btn-modal{
+  background-color: rgba(108, 51, 241, 0.5);
+  color: white;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 

@@ -26,3 +26,12 @@ height: 100vh;
     font-size: 12px;
     }
 }
+
+.btn-modal{
+    background-color: rgba(108, 51, 241, 0.7);
+    color: white;
+}
+
+.btn-modal:hover{
+    background:rgba(91, 41, 209, 0.733);
+}
