@@ -12,7 +12,30 @@ html{
 
 .fonte{
     font-family: 'Sarala', sans-serif;
-  color: #756E6E;
-  font-weight: 400;
-  font-size: 18px;
+    color: #756E6E;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none !important;
+}
+#semlinha:hover{
+    text-decoration: none !important;
+}
+.bg-fluid{
+    background-color: #756E6E;
+}
+
+.card-r{
+    border-radius: 30px;
+}
+
+.img-size{
+    width: 200px;
+    height: 200px;
+}
+
+.btn-modal{
+    background-color: rgba(108, 51, 241, 0.5);
+    color: white;
+    overflow-x: hidden;
+    width: 100vw;
 }

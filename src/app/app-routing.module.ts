@@ -14,7 +14,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'login',pathMatch:'full'}, //caminho para os componentes
+  {path:'',redirectTo:'inicio',pathMatch:'full'}, //caminho para os componentes
   {path:'login',component:LoginComponent},
   {path:'cadastrar',component:CadastrarComponent},
   {path:'inicio',component:InicioComponent},
