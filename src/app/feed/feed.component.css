@@ -81,6 +81,21 @@ button:focus path{
   width: 50px;
 }
 
+.card-config{
+  border-radius: 30px;
+}
+
+.btn-modal{
+  background-color: rgba(108, 51, 241, 0.7);
+  color: white;
+}
+
+.btn-modal:hover{
+  background:none;
+  color:black;
+  border: 5px;
+  border-color: rgba(108, 51, 241, 0.7);
+}
 
 
 
