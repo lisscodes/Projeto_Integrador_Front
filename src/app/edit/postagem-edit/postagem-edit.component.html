@@ -20,6 +20,15 @@
             </div>
 
             <div class="form-group">
+                <label for="imagem">Foto</label>
+                <input [(ngModel)]='postagem.foto' class="form-control" type="text" name="foto" placeholder="Insira o link da foto">
+            </div>
+
+        <div class="d-flex justify-content-center">
+            <img src="{{postagem.foto}}" alt="" class="img-fluid foto-size mb-3" width="70%" height="70%">
+        </div>
+
+            <div class="form-group">
                 <label for="texto">Escolha um tema</label>
                 <select class="form-control" name="tema" id="tema" [(ngModel)]="idTema" (change)="findByIdTema()">
                     <option *ngFor="let item of listaTemas" value="{{item.id}}">
