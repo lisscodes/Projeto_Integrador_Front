@@ -25,11 +25,10 @@ export class PostagemService {
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
     return this.http.post<Postagem>('https://redetec.herokuapp.com/postagens', postagem, this.token)
-
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem>('https://redetec.herokuapp.com/postagens', this.token)
+    return this.http.put<Postagem>('https://redetec.herokuapp.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number){
