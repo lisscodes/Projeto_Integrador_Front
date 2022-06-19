@@ -19,6 +19,7 @@ import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     UserEditComponent,
     PostagemDeleteComponent,
     PerfilComponent
+  
   ],
   imports: [
     BrowserModule,

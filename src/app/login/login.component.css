@@ -35,3 +35,7 @@ height: 100vh;
 .btn-modal:hover{
     background:rgba(91, 41, 209, 0.733);
 }
+
+#imagemdefundo{
+    background-image: url('https://i.imgur.com/RrMBTfp.png');
+  }

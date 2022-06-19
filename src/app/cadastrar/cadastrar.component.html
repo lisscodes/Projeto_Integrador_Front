@@ -1,7 +1,9 @@
- <div class="col-md-6 justify-content-center container">
-        <div class="col-md-9 align-self-center justify-content-center container">
+ <div class="container-fluid" id="bg"> 
+ <div class="col-md-6 justify-content-center container-fluid" >
+        <div class="col-md-9 align-self-center justify-content-center container my-5" id="coluna">
+           
             <h2 class="text-center">Cadastre-se</h2>
-            <form >
+           <form >
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input [(ngModel)]='usuario.nome' name="nome" class="form-control" type="text" placeholder="Seu nome">
@@ -29,9 +31,10 @@
                     </select>
                 </div>
                 <div class="d-flex justify-content-around">
-                    <button routerLink="/login" class="btn btn-outline-danger w-25" routerLink="/login">Cancelar</button>
+                    <button routerLink="/login" class="btn btn-danger w-25" routerLink="/login">Cancelar</button>
                     <button class="btn btn-success w-25" (click)="cadastrar()">Cadastrar</button>
                 </div>
             </form>
         </div>
     </div>
+</div>

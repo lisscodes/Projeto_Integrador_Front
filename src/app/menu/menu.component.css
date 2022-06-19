@@ -21,6 +21,7 @@ a {
   width: 100vw;
   display: flex;
   gap: 32px;
+
 }
 
 #cabecalho-img {
@@ -30,9 +31,11 @@ a {
 
 #cabecalho-item {
   font-family: 'Sarala', sans-serif !important;
-  color: #756E6E !important;
+  color: #ffffff !important;
   font-weight: 400;
   font-size: 18px;
 }
-
+.navbar{
+  background-color: #8e8a8f;
+}
 

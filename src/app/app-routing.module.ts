@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
 
+
 const routes: Routes = [
   {path:'',redirectTo:'inicio',pathMatch:'full'}, //caminho para os componentes
   {path:'login',component:LoginComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
   {path: 'user-edit/:id', component: UserEditComponent},
-  {path: 'perfil', component: PerfilComponent}
+  {path: 'perfil', component: PerfilComponent},
+ 
 
 ];
 

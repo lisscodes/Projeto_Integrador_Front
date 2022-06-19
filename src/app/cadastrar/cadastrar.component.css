@@ -1,0 +1,18 @@
+#coluna{
+    backdrop-filter: blur(16px);
+    height: 590px;
+    background-color: rgb(215, 200, 211);
+    border-radius: 25px;
+    box-shadow: 0 0 3em rgb(42, 30, 42);
+}
+ #bg{
+    min-width: 100vh;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(234, 218, 229) ;
+   
+ }
