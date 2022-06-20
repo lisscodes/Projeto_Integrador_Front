@@ -40,3 +40,11 @@ html{
     width: 100vw;
 }
 
+.form{
+    font-family: 'Sarala', sans-serif;
+    color: #756E6E;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none !important;  
+}
+
