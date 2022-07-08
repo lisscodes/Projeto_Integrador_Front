@@ -1,5 +1,21 @@
 # RedetecFront
 
+O projeto RedeTec tem o objetivo de aplicar os conhecimentos aprendidos no segundo e terceiro blocos do bootcamp de Desenvolvimento Web Java na Generation Brasil.
+
+Nessa segunda etapa foi desenvolvido o front-end utilizando o conceito de Single Page Applications (SPA), de modo que a aplicação se conecte com o back-end desenvolvido no segundo bloco.
+
+Front-end finalizado em junho/2022.
+
+<h2>Tecnologias utilizadas</h2>
+- HTML
+- CSS
+- TypeScript
+- Angular
+- Figma
+- Netlify
+<h3>Link da aplicação</h3>
+https://redetec.netlify.app
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
 ## Development server
