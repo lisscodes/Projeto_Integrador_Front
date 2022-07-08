@@ -13,9 +13,11 @@ Front-end finalizado em junho/2022.
 - Angular
 - Figma
 - Netlify
+<br>
 <h3>Link da aplicação</h3>
 https://redetec.netlify.app
-
+<br>
+<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
 ## Development server
